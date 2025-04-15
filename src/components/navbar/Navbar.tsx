@@ -4,6 +4,7 @@ import { ButtonOutline, ButtonFilled } from "./NavButtons";
 import { CustomLink } from "./CustomLink";
 import { useLocation } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,9 +24,11 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-sm py-4 px-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center">
-          <img src={logo} alt="Assumption Logo" className="h-12 w-12" />
-        </div>
+        <Link to="/">
+          <div className="flex items-center">
+            <img src={logo} alt="Assumption Logo" className="h-12 w-12" />
+          </div>
+        </Link>
 
         <div className="hidden md:flex items-center space-x-8">
           {links.map((link) => (
