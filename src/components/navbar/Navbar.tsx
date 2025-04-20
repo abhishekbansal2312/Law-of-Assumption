@@ -43,9 +43,9 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
-          <ButtonOutline text="Contact us" />
-          <ButtonOutline text="Sign up" />
-          <ButtonFilled text="Log in" />
+          <ButtonOutline text="Contact us" href="/contact" />
+          <ButtonOutline text="Sign up" href="/signup" />
+          <ButtonFilled text="Log in" href="/login" />
         </div>
 
         <div className="md:hidden">
@@ -69,9 +69,9 @@ export default function Navbar() {
             ))}
 
             <div className="flex flex-col space-y-3 pt-4">
-              <ButtonOutline text="Contact us" />
-              <ButtonOutline text="Sign up" />
-              <ButtonFilled text="Log in" />
+              <ButtonOutline text="Contact us" href="/contact" />
+              <ButtonOutline text="Sign up" href="/signup" />
+              <ButtonFilled text="Log in" href="/login" />
             </div>
           </div>
         </div>
